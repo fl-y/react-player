@@ -109,7 +109,9 @@ export default class SoundCloud extends Component {
     return (
       <iframe
         ref={this.ref}
-        src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(this.props.url)}`}
+        src={
+          `https://w.soundcloud.com/player/?url=${encodeURIComponent(this.props.url)}&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=true`
+        }
         style={style}
         frameBorder={0}
         allow='autoplay'
